@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Talensia | Consultoría Organizacional</title>
+
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -22,14 +23,14 @@
     }
 
     .header-logo img {
-      height:300px;
+      height: 120px; /* AUMENTADO para mayor visibilidad */
     }
 
     nav {
       display: flex;
-      justify-content: center;
-      flex: 1;
       gap: 2rem;
+      justify-content: center;
+      flex-grow: 1;
     }
 
     nav a {
@@ -56,26 +57,23 @@
       margin-bottom: 3rem;
     }
 
-    .servicios-grid {
+    .servicio-contenedor {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       gap: 2rem;
     }
 
-    .servicio-item {
+    .servicio {
       flex: 1 1 300px;
       background-color: #ffffff;
       padding: 2rem;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    .servicio-item h3 {
-      color: #2b2b2b;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="header-logo">
@@ -95,24 +93,24 @@
 
   <section id="servicios">
     <h2>Nuestros Servicios</h2>
-    <div class="servicios-grid">
-      <div class="servicio-item">
+    <div class="servicio-contenedor">
+      <div class="servicio">
         <h3>Rediseño Organizacional</h3>
         <p>Transformamos estructuras internas para adaptarlas a nuevos desafíos, promoviendo claridad y eficiencia.</p>
       </div>
-      <div class="servicio-item">
+      <div class="servicio">
         <h3>Descentralización Operativa</h3>
         <p>Facilitamos mayor autonomía local con modelos híbridos que optimizan la toma de decisiones y los flujos de trabajo.</p>
       </div>
-      <div class="servicio-item">
+      <div class="servicio">
         <h3>Optimización de Procesos</h3>
         <p>Detectamos ineficiencias y proponemos mejoras prácticas, priorizando la experiencia del equipo interno.</p>
       </div>
-      <div class="servicio-item">
+      <div class="servicio">
         <h3>Gestión del Cambio</h3>
         <p>Acompañamos procesos de transformación desde una mirada humana, minimizando la resistencia interna.</p>
       </div>
-      <div class="servicio-item">
+      <div class="servicio">
         <h3>Formación de Liderazgo</h3>
         <p>Capacitaciones breves y prácticas para que líderes puedan sostener nuevas estructuras y culturas organizacionales.</p>
       </div>
@@ -120,6 +118,7 @@
   </section>
 </body>
 </html>
+
 
 
 
