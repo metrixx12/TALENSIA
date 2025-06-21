@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Talensia | Consultoría Organizacional</title>
-
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -23,14 +22,14 @@
     }
 
     .header-logo img {
-      height: 200px;
+      height: 100px;
     }
 
     nav {
       display: flex;
-      gap: 2rem;
       justify-content: center;
       flex: 1;
+      gap: 2rem;
     }
 
     nav a {
@@ -44,9 +43,39 @@
       padding: 2rem;
       line-height: 1.6;
     }
+
+    #servicios {
+      padding: 4rem 2rem;
+      background-color: #f9f9f9;
+    }
+
+    #servicios h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #2b2b2b;
+      margin-bottom: 3rem;
+    }
+
+    .servicios-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 2rem;
+    }
+
+    .servicio-item {
+      flex: 1 1 300px;
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .servicio-item h3 {
+      color: #2b2b2b;
+    }
   </style>
 </head>
-
 <body>
   <header>
     <div class="header-logo">
@@ -55,7 +84,7 @@
     <nav>
       <a href="#">Inicio</a>
       <a href="#">Quiénes Somos</a>
-      <a href="#">Servicios</a>
+      <a href="#servicios">Servicios</a>
       <a href="#">Contacto</a>
     </nav>
   </header>
@@ -63,7 +92,35 @@
   <main>
     <p>Bienvenido a Talensia, donde acompañamos a las organizaciones en su proceso de transformación, descentralización y rediseño operativo.</p>
   </main>
+
+  <section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="servicios-grid">
+      <div class="servicio-item">
+        <h3>Rediseño Organizacional</h3>
+        <p>Transformamos estructuras internas para adaptarlas a nuevos desafíos, promoviendo claridad y eficiencia.</p>
+      </div>
+      <div class="servicio-item">
+        <h3>Descentralización Operativa</h3>
+        <p>Facilitamos mayor autonomía local con modelos híbridos que optimizan la toma de decisiones y los flujos de trabajo.</p>
+      </div>
+      <div class="servicio-item">
+        <h3>Optimización de Procesos</h3>
+        <p>Detectamos ineficiencias y proponemos mejoras prácticas, priorizando la experiencia del equipo interno.</p>
+      </div>
+      <div class="servicio-item">
+        <h3>Gestión del Cambio</h3>
+        <p>Acompañamos procesos de transformación desde una mirada humana, minimizando la resistencia interna.</p>
+      </div>
+      <div class="servicio-item">
+        <h3>Formación de Liderazgo</h3>
+        <p>Capacitaciones breves y prácticas para que líderes puedan sostener nuevas estructuras y culturas organizacionales.</p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
+
+
 
 
