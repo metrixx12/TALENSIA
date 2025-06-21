@@ -27,10 +27,10 @@
     }
 
     nav {
-      flex: 1;
       display: flex;
       justify-content: center;
       gap: 2rem;
+      flex-grow: 1;
     }
 
     nav a {
@@ -45,26 +45,26 @@
       line-height: 1.6;
     }
 
-    section#servicios {
+    #servicios {
       padding: 4rem 2rem;
       background-color: #f9f9f9;
     }
 
-    section#servicios h2 {
+    #servicios h2 {
       text-align: center;
       font-size: 2rem;
       color: #2b2b2b;
       margin-bottom: 3rem;
     }
 
-    .servicio-container {
+    .servicio-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       gap: 2rem;
     }
 
-    .servicio {
+    .servicio-item {
       flex: 1 1 300px;
       background-color: #ffffff;
       padding: 2rem;
@@ -72,7 +72,7 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
-    .servicio h3 {
+    .servicio-item h3 {
       color: #2b2b2b;
     }
   </style>
@@ -97,28 +97,28 @@
 
   <section id="servicios">
     <h2>Nuestros Servicios</h2>
-    <div class="servicio-container">
-      <div class="servicio">
+    <div class="servicio-grid">
+      <div class="servicio-item">
         <h3>Rediseño Organizacional</h3>
         <p>Transformamos estructuras internas para adaptarlas a nuevos desafíos, promoviendo claridad y eficiencia.</p>
       </div>
 
-      <div class="servicio">
+      <div class="servicio-item">
         <h3>Descentralización Operativa</h3>
         <p>Facilitamos mayor autonomía local con modelos híbridos que optimizan la toma de decisiones y los flujos de trabajo.</p>
       </div>
 
-      <div class="servicio">
+      <div class="servicio-item">
         <h3>Optimización de Procesos</h3>
         <p>Detectamos ineficiencias y proponemos mejoras prácticas, priorizando la experiencia del equipo interno.</p>
       </div>
 
-      <div class="servicio">
+      <div class="servicio-item">
         <h3>Gestión del Cambio</h3>
         <p>Acompañamos procesos de transformación desde una mirada humana, minimizando la resistencia interna.</p>
       </div>
 
-      <div class="servicio">
+      <div class="servicio-item">
         <h3>Formación de Liderazgo</h3>
         <p>Capacitaciones breves y prácticas para que líderes puedan sostener nuevas estructuras y culturas organizacionales.</p>
       </div>
@@ -126,4 +126,5 @@
   </section>
 </body>
 </html>
+
 
